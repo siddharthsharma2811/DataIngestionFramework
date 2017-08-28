@@ -1,0 +1,39 @@
+#Defining directories
+export home_dir=/home/ec2-user/DI_Hive
+export log=$home_dir/log
+export scripts=$home_dir/scripts
+export data=$home_dir/data
+export archive=$home_dir/archive
+
+#Defining server information
+#export parImpServer=z9awsstiku2e75.celgene.com
+export parImpServer=z9awsspiku2e107.celgene.com
+export parImpPort=25003
+#export parmCertificateloc=/opt/cloudera/security/pki/haproxy/impala.pem
+
+#Defining database and table parameters
+export parDbname=datalakepoc_metadata
+export parAudTblName=audit_table_metavalidation
+export parResTblName=validation_report
+export parmCertificateloc=/opt/cloudera/security/pki/impala.pem
+export Column_Defination_Table=column_definition
+export DT2_Analyzer_Status=dt2analyzer_status
+
+#Defining Parameters for AWS S3
+export parEncAlg=AES256
+export parTmpLoc=$home_dir/temp
+
+#Defining Parameters for email notifications
+export parEmailAddr=nkm@celgene.com
+
+#Defining jar location
+export jarLoc=$home_dir
+export jarname=/home/ec2-user/DI_Hive/JupiterMetaDataValidator-1.0.0.jar
+
+#Temp Confuiguration
+SAS_REFRESH_PATH="s3://cgiku004-prd-raw-zone-bucket/Raw/Confidential/sas_refresh/"
+awssascountextract=$SAS_REFRESH_PATH"sas_counts"
+validationhome="/home/ec2-user/DI_Hive/"
+
+
+
